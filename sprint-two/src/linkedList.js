@@ -40,7 +40,7 @@ var LinkedList = function() {
       }
     };
     return lookThroughLinkedList(list.head);
-    // return lookThroughLinkedList(list.head);
+    
   };
 
   return list;
