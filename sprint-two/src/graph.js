@@ -33,7 +33,11 @@ Graph.prototype.removeNode = function(node) {
     } 
   }
 
-  return this.vertices;
+  for (var i = 0; i < this.edges.length; i++) {
+    if (this.edges[i][0] === node || this.edges[i][1] === node) {
+      this.edges.splice(i, 1);
+    }
+  }
   
 };
 
